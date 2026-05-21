@@ -3,40 +3,40 @@ import { Badge } from "@/components/ui/badge"
 
 const features = [
   {
-    title: "Адаптивная нейрообработка",
-    description: "Самооптимизирующиеся алгоритмы, которые обучаются на нейронных паттернах и улучшают интерпретацию сигналов.",
-    icon: "brain",
-    badge: "ИИ",
+    title: "Живые трансляции",
+    description: "Смотрите каждую гонку в режиме реального времени с несколькими камерами и комментаторами.",
+    icon: "📺",
+    badge: "LIVE",
   },
   {
-    title: "Медицинская защита",
-    description: "Шифрование по стандартам FDA со сквозной защитой конфиденциальных нейронных данных.",
-    icon: "lock",
-    badge: "Сертификат",
+    title: "Фиджитал формат",
+    description: "Уникальный гибрид реальных и виртуальных гонок — соревнования проходят одновременно в двух мирах.",
+    icon: "🎮",
+    badge: "Гибрид",
   },
   {
-    title: "Интуитивное управление",
-    description: "Естественная трансляция мыслей в действия с откликом менее миллисекунды и точностью 99,7%.",
-    icon: "globe",
-    badge: "Точность",
+    title: "Профили гонщиков",
+    description: "Подробная статистика каждого участника: скорость, позиции, личные рекорды и история побед.",
+    icon: "🏎️",
+    badge: "Статистика",
   },
   {
-    title: "Предиктивная калибровка",
-    description: "ML-модели, которые предугадывают намерения пользователя и оптимизируют нейронные пути.",
-    icon: "zap",
-    badge: "Умный",
+    title: "Интерактивная трасса",
+    description: "Исследуйте трассу на интерактивной карте: повороты, зоны обгонов, места для зрителей.",
+    icon: "🗺️",
+    badge: "3D карта",
   },
   {
-    title: "Биометрическая интеграция",
-    description: "Бесшовная синхронизация с мониторингом жизненных показателей для контроля здоровья.",
-    icon: "link",
-    badge: "Связь",
+    title: "VIP билеты",
+    description: "Эксклюзивный доступ к паддоку, встречи с пилотами и лучшие места на трибунах.",
+    icon: "⭐",
+    badge: "VIP",
   },
   {
-    title: "Поддержка XR",
-    description: "Нативная совместимость с AR/VR-средами для терапевтических и рабочих приложений.",
-    icon: "target",
-    badge: "XR Ready",
+    title: "Галерея и моменты",
+    description: "Лучшие фото и видео с гонок: обгоны, финиши, эмоции — всё в одном месте.",
+    icon: "📸",
+    badge: "Фото",
   },
 ]
 
@@ -45,9 +45,9 @@ export function FeaturesSection() {
     <section className="py-24 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Возможности нового поколения</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Добро пожаловать в мир фиджитал гонок!</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Почувствуйте будущее с технологиями, которые переопределяют возможное
+            Ощутите адреналин реальных и виртуальных соревнований в одном захватывающем шоу
           </p>
         </div>
 
@@ -60,14 +60,7 @@ export function FeaturesSection() {
             >
               <CardHeader>
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-3xl">
-                    {feature.icon === "brain" && "&#129504;"}
-                    {feature.icon === "lock" && "&#128274;"}
-                    {feature.icon === "globe" && "&#127760;"}
-                    {feature.icon === "zap" && "&#9889;"}
-                    {feature.icon === "link" && "&#128279;"}
-                    {feature.icon === "target" && "&#127919;"}
-                  </span>
+                  <span className="text-3xl">{feature.icon}</span>
                   <Badge variant="secondary" className="bg-accent text-accent-foreground">
                     {feature.badge}
                   </Badge>

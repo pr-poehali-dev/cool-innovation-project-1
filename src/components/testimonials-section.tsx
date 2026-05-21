@@ -3,25 +3,25 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 const testimonials = [
   {
-    name: "Елена Родригес",
-    role: "Директор по нейронауке, Quantum Dynamics",
+    name: "Алексей Громов",
+    role: "Болельщик, Москва",
+    avatar: "https://cdn.poehali.dev/projects/9b2f0625-e1a2-428e-9d06-fb233bb7b481/files/1c51edcc-5672-4efb-8d7b-19c296747864.jpg",
+    content:
+      "Невероятные ощущения! Фиджитал гонки — это совершенно новый уровень зрелищности. Смотрю каждый заезд в прямом эфире и не могу оторваться!",
+  },
+  {
+    name: "Марина Соколова",
+    role: "Фанат гонок, Санкт-Петербург",
     avatar: "/professional-woman-scientist.png",
     content:
-      "SynapseAI изменил наш подход к нейрореабилитации. Результаты пациентов улучшились на 340% после внедрения.",
+      "Купила VIP-билет и это лучшее решение в жизни! Встреча с пилотами, лучшие места на трибуне — атмосфера просто электрическая.",
   },
   {
-    name: "Маркус Уильямс",
-    role: "Руководитель исследований, Stellar Analytics",
-    avatar: "/cybersecurity-expert-man.jpg",
-    content:
-      "Точность и протоколы безопасности не имеют аналогов. Мы значительно ускорили клинические испытания с платформой SynapseAI.",
-  },
-  {
-    name: "Анна Ковальски",
-    role: "Вице-президент по разработке, Nova Industries",
+    name: "Дмитрий Павлов",
+    role: "Постоянный зритель трансляций",
     avatar: "/asian-woman-tech-developer.jpg",
     content:
-      "Интеграция прошла безупречно. Адаптивные алгоритмы понимают намерения пользователя лучше любой системы, что мы тестировали.",
+      "Сайт удобный, билеты купил за 2 минуты. Трансляции в отличном качестве, статистика по гонщикам всегда актуальная. Рекомендую всем!",
   },
 ]
 
@@ -30,9 +30,9 @@ export function TestimonialsSection() {
     <section className="py-24 px-6 bg-card">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-card-foreground mb-4 font-sans">Нам доверяют лидеры</h2>
+          <h2 className="text-4xl font-bold text-card-foreground mb-4 font-sans">Что говорят болельщики</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Что говорят лидеры индустрии о нашей революционной технологии
+            Реальные отзывы тех, кто уже испытал адреналин фиджитал гонок
           </p>
         </div>
 

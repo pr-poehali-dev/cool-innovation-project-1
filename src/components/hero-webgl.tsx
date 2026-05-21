@@ -2,6 +2,7 @@ import { Canvas, extend, useFrame } from "@react-three/fiber"
 import { useAspect, useTexture } from "@react-three/drei"
 import { useMemo, useRef, useState, useEffect } from "react"
 import * as THREE from "three"
+import { Button } from "@/components/ui/button"
 
 const TEXTUREMAP = { src: "https://i.postimg.cc/XYwvXN8D/img-4.png" }
 const DEPTHMAP = { src: "https://i.postimg.cc/2SHKQh2q/raw-4.webp" }
@@ -114,8 +115,8 @@ const Scene = () => {
 }
 
 export const Hero3DWebGL = () => {
-  const titleWords = "Synapse AI".split(" ")
-  const subtitle = "Нейроинтерфейсы нового поколения."
+  const titleWords = "Фиджитал Гонки".split(" ")
+  const subtitle = "Ощутите адреналин! Покупайте билеты и следите за трансляциями в реальном времени."
   const [visibleWords, setVisibleWords] = useState(0)
   const [subtitleVisible, setSubtitleVisible] = useState(false)
   const [delays, setDelays] = useState<number[]>([])
@@ -172,6 +173,29 @@ export const Hero3DWebGL = () => {
           >
             {subtitle}
           </div>
+        </div>
+        <div
+          className={`mt-8 flex flex-col sm:flex-row gap-4 pointer-events-auto ${subtitleVisible ? "fade-in-subtitle" : ""}`}
+          style={{
+            animationDelay: `${titleWords.length * 0.13 + 0.6 + subtitleDelay}s`,
+            opacity: subtitleVisible ? undefined : 0,
+          }}
+        >
+          <Button
+            size="lg"
+            className="bg-red-500 hover:bg-red-600 text-white font-orbitron text-lg px-10 py-6 pulse-button border-0"
+            onClick={() => document.getElementById("tickets")?.scrollIntoView({ behavior: "smooth" })}
+          >
+            Купить билеты
+          </Button>
+          <Button
+            size="lg"
+            variant="outline"
+            className="border-red-500 text-red-400 hover:bg-red-500 hover:text-white font-orbitron text-lg px-10 py-6 bg-transparent"
+            onClick={() => document.getElementById("broadcasts")?.scrollIntoView({ behavior: "smooth" })}
+          >
+            Смотреть трансляцию
+          </Button>
         </div>
       </div>
 
